@@ -5,7 +5,6 @@
     display: inline-block;
     white-space: normal;
     border-bottom: 1px solid #ABA8A8;
-
     max-height: 150px;
     overflow: auto;
 }

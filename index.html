@@ -2,13 +2,18 @@
 <html>
     <head>
         <title>Input Chips For AngularJS</title>
-        <link href="input-chips.css"/>
+        <link rel="stylesheet" href="input-chips.css"/>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
         
-        <script src="angular/angular.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
         <script src="input-chips.js"></script>
     </head>
-    <body ng-app="inputChipsApp">
-        <input-chips chips-value="mailData.to" chips-unique="false" style="width:80%"></input-chips>
+    <body ng-app="inputChipsApp" ng-controller="myCon">
+        <input-chips chips-value="mailData.to" chips-unique="false" chips-break="chipsBreakDelimiter" style="width:50%"></input-chips>
+        
+        <br/>
+        <button ng-click="getChips()">Get Chips</button>
     </body>
 </html>
 
